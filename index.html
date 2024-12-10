@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="Sstyle.css">
+</head>
+<body>
+    <h1 style="display: flex; flex-direction: column; align-items: center;">Survey form</h1>
+   <form action="">
+<label for="full_name">Full name</label>
+<input id="full_name" type="text" class="input_field" placeholder="Enter full name"> 
+
+<label for="age">Age</label>
+<input id="age" type="number" class="input_field" placeholder="Enter age">
+
+<label for="Email">Email address</label>
+<input id="email" type="email" class="input_field" placeholder="Enter email address">
+
+<label for="sport" class="survey_label"><b>Favourite type of sport</b></label>
+
+
+<div class="radio_container">
+    <input type="radio" name="sport" id="indoors">
+    <label for="Indoors">Indoors</label>
+</div>
+
+<div class="radio_container">
+    <input type="radio" name="sport" id="outdoors">
+    <label for="Outdoors">outdoors</label>
+</div>
+
+<div class="radio_container">
+    <input type="radio" name="sport" id="both">
+    <label for="both">Both</label>
+</div>
+
+<label for="" class="survey_label"><b>Favourite sport</b></label>
+
+<div class="radio_container">
+    <input type="checkbox" name="sport" id="soccer">
+    <label for="soccer">soccer</label>
+</div>
+
+   <div class="radio_container">
+    <input type="checkbox" name="sport" id="basket ball">
+    <label for="basket ball">Basket ball</label>
+   </div> 
+
+    <div class="radio_container">
+        <input type="checkbox" name="sport" id="tennis">
+        <label for="tennis">Tennis</label>
+    </div>
+
+    <div class="radio_container">
+        <input type="checkbox" name="sport" id="athletics">
+        <label for="athletics">Athletics</label>
+    </div>
+
+    <label for="" class="Favourite sport to play"><b> Favourite sport to play and watch</b></label>
+
+    <select name="Favourite sport to play" id="Favourite sport to play" style="display: flex; flex-direction: column; height: 30px; width: 620px; border-radius: 10px;">
+        <option value="soccer">Soccer</option>
+        <option value="basket ball">Basket ball</option>
+        <option value="athletics">Bthletics</option>
+        <option value="tennis">Tennis</option>
+
+    </select>
+
+<label for="message">Your thoughts on sports(optional)</label>
+<textarea placeholder="let us know your thouhgts on sports options" name="your thoughts on sports" id="message" cols="1" rows="5" class="input_field" style="height: 150px; border-radius: 5px;"></textarea>
+
+<button class="input_field">Submit</button>
+   </form> 
+</body>
+</html>
